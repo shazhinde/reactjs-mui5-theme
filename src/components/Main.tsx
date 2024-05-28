@@ -34,6 +34,7 @@ export const Main = () => {
   return (
     <Card>
       <CardContent>
+        <Typography>Change Theme</Typography>
         <Stack direction="column" spacing={5}>
           <Stack direction="row" spacing={5}>
             <DarkModeSwitch />
@@ -74,9 +75,8 @@ export const Main = () => {
                 padding: 1,
               }}
             >
-              <Typography>Use Theme</Typography>
+              <CircularProgress color={"downvote"} />
             </Box>
-            <CircularProgress color={"downvote"} />
           </Stack>
         </Stack>
       </CardContent>

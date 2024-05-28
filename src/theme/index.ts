@@ -2,6 +2,7 @@ import { theme as green } from "./presets/green";
 import { theme as blue } from "./presets/blue";
 import { theme as _default } from "./presets/default";
 import { theme as red } from "./presets/red";
+import { theme as venue } from "./presets/venue";
 import { Palette, PaletteColor } from "@mui/material/styles";
 import { DeepPartial } from "../utility/types";
 
@@ -45,7 +46,8 @@ export interface AppTheme {
 
 export const color = {
   0: _default,
-  1: green,
+  1: venue,
   2: blue,
   3: red,
+  4: green,
 };
