@@ -34,7 +34,7 @@ export const Main = () => {
   return (
     <Card>
       <CardContent>
-        <Typography>Change Theme</Typography>
+        <Typography fontSize={20} mb={2}>MUI Theme Switcher</Typography>
         <Stack direction="column" spacing={5}>
           <Stack direction="row" spacing={5}>
             <DarkModeSwitch />
@@ -67,17 +67,17 @@ export const Main = () => {
             <Checkbox color={"secondary"} defaultChecked />
             <Slider />
           </Stack>
-          <Stack alignItems={"center"} direction="row" spacing={5}>
-            <Box
-              sx={{
-                color: theme?.palette?.containerSecondary?.contrastText,
-                backgroundColor: theme?.palette?.containerSecondary?.main,
-                padding: 1,
-              }}
-            >
-              <CircularProgress color={"downvote"} />
-            </Box>
-          </Stack>
+          {/*<Stack alignItems={"center"} direction="row" spacing={5}>*/}
+          {/*  <Box*/}
+          {/*    sx={{*/}
+          {/*      color: theme?.palette?.containerSecondary?.contrastText,*/}
+          {/*      backgroundColor: theme?.palette?.containerSecondary?.main,*/}
+          {/*      padding: 1,*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <CircularProgress color={"downvote"} />*/}
+          {/*  </Box>*/}
+          {/*</Stack>*/}
         </Stack>
       </CardContent>
     </Card>

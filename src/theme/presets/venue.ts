@@ -1,53 +1,78 @@
 import { createTheme } from "@mui/material/styles";
 import { AppTheme } from "..";
+import {light} from "@mui/material/styles/createPalette";
 
 const { palette } = createTheme();
 
+// const venueLight = createTheme({
+//     palette: {
+//         mode: "light",
+//     },
+// });
+//
+// const venueDark = createTheme({
+//     palette: {
+//         mode: "dark",
+//     },
+// });
+
+const venuePrimary = "#9E00FF";
+const venueSecondary = "#D99AFF";
+const venuePrimaryText = "#03060B";
+const venueSecondaryText = "#0F0F0F";
+const venueBGDefault = "#FAFAFA";
+const venueBGPaper = "#ffffff";
+const venueContrast = "#ffffff";
+const venueError = "#D32F2F";
+const venueWarning = "#EF6C00";
+const venueInfo = "#0288D1";
+
+
 export const theme: AppTheme = {
-    dark: {
+    light: {
         palette: {
-            mode: "dark",
+            mode: "light",
             primary: palette.augmentColor({
                 color: {
-                    main: "#AD00FF",
-                    contrastText: "#ffffff",
+                    main: venuePrimary,
+                    contrastText: venueContrast,
                 },
             }),
             secondary: palette.augmentColor({
                 color: {
-                    main: "#003FF7",
-                    contrastText: "#ffffff",
+                    main: venueSecondary,
+                    contrastText: venueContrast,
                 },
             }),
             text: {
-                primary: "#e6e1e6",
-                secondary: "#e6e1e6",
+                primary: venuePrimaryText,
+                secondary: venueSecondaryText,
             },
             background: {
-                default: "#1c1b1e",
-                paper: "#1c1b1e",
+                default: venueBGDefault,
+                paper: venueBGPaper,
             },
             error: palette.augmentColor({
                 color: {
-                    main: "#ba1b1b",
-                    contrastText: "#ffffff",
+                    main: venueError,
+                    contrastText: venueContrast,
                 },
             }),
             success: palette.augmentColor({
                 color: {
                     main: "#006e10",
-                    contrastText: "#ffffff",
+                    contrastText: venueContrast,
                 },
             }),
             info: palette.augmentColor({
                 color: {
                     main: "#0062a2",
-                    contrastText: "#ffffff",
+                    contrastText: venueContrast,
                 },
             }),
             warning: palette.augmentColor({
                 color: {
-                    main: "#606200",
+                    main: venueWarning,
                     contrastText: "#313300",
                 },
             }),
@@ -55,13 +80,13 @@ export const theme: AppTheme = {
             upvote: palette.augmentColor({
                 color: {
                     main: "#6342d2",
-                    contrastText: "#ffffff",
+                    contrastText: venueContrast,
                 },
             }),
             downvote: palette.augmentColor({
                 color: {
-                    main: "#ba1b1b",
-                    contrastText: "#ffffff",
+                    main: venueError,
+                    contrastText: venueContrast,
                 },
             }),
             containerPrimary: palette.augmentColor({
@@ -78,50 +103,50 @@ export const theme: AppTheme = {
             }),
         },
     },
-    light: {
+    dark: {
         palette: {
-            mode: "light",
+            mode: "dark",
             primary: palette.augmentColor({
                 color: {
-                    main: "#AD00FF",
-                    contrastText: "#ffffff",
+                    main: venuePrimary,
+                    contrastText: venueContrast,
                 },
             }),
             secondary: palette.augmentColor({
                 color: {
-                    main: "#cc3300",
-                    contrastText: "#ffffff",
+                    main: venueSecondary,
+                    contrastText: venueContrast,
                 },
             }),
             text: {
-                primary: "#1c1b1e",
-                secondary: "#1c1b1e",
+                primary: venueContrast,
+                secondary: venueContrast,
             },
             background: {
-                default: "#fffbff",
-                paper: "#fffbff",
+                default: venuePrimaryText,
+                paper: venueSecondaryText,
             },
             error: palette.augmentColor({
                 color: {
-                    main: "#ba1b1b",
-                    contrastText: "#ffffff",
+                    main: venueError,
+                    contrastText: venueContrast,
                 },
             }),
             success: palette.augmentColor({
                 color: {
                     main: "#006e10",
-                    contrastText: "#ffffff",
+                    contrastText: venueContrast,
                 },
             }),
             info: palette.augmentColor({
                 color: {
                     main: "#0062a2",
-                    contrastText: "#ffffff",
+                    contrastText: venueContrast,
                 },
             }),
             warning: palette.augmentColor({
                 color: {
-                    main: "#606200",
+                    main: venueWarning,
                     contrastText: "#313300",
                 },
             }),
@@ -129,13 +154,13 @@ export const theme: AppTheme = {
             upvote: palette.augmentColor({
                 color: {
                     main: "#6342d2",
-                    contrastText: "#ffffff",
+                    contrastText: venueContrast,
                 },
             }),
             downvote: palette.augmentColor({
                 color: {
-                    main: "#ba1b1b",
-                    contrastText: "#ffffff",
+                    main: venueError,
+                    contrastText: venueContrast,
                 },
             }),
             containerPrimary: palette.augmentColor({

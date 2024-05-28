@@ -45,8 +45,8 @@ export interface AppTheme {
 }
 
 export const color = {
-  0: _default,
-  1: venue,
+  0: venue,
+  1: _default,
   2: blue,
   3: red,
   4: green,
